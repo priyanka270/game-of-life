@@ -1,6 +1,4 @@
-properties([pipelineTriggers([githubPush()])])
 node {
-    git url: 'https://github.com/priyanka270/game-of-life.git', branch: 'master' 
    def mvnHome
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository

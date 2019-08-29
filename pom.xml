@@ -16,7 +16,7 @@
         <sourceJdk>1.8</sourceJdk>
         <targetJdk>1.8</targetJdk>
         <github.account>wakaleo</github.account>
-        <thucydides.version>1.8.3</thucydides.version>
+        <thucydides.version>1.8.4</thucydides.version>
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
@@ -76,11 +76,6 @@
                 </executions>
             </plugin>
             <!-- CODE COVERAGE -->
-            <plugin>
-                <groupId>org.sonarsource.scanner.maven</groupId>
-                <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.3.0.603</version>
-            </plugin>  
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
@@ -470,6 +465,11 @@
                             <effort>Max</effort>
                             <xmlOutput>true</xmlOutput>
                         </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                        <version>3.6.0.1398</version>
                     </plugin>
                     <plugin>
                         <artifactId>maven-javadoc-plugin</artifactId>
